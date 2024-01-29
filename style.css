@@ -68,7 +68,7 @@ main {
   background-color: var(--Headings);
   padding: 1rem 2rem;
   border-radius: 30px;
-  border: none;
+  border: 1px solid var(--Headings);
 }
 
 .Sedans {
@@ -92,6 +92,24 @@ main {
 }
 .Cardmore3 {
   color: var(--Cardbg3);
+}
+
+.Button:hover {
+  border: 1px solid var(--Headings);
+  color: var(--Headings);
+  cursor: pointer;
+}
+
+.Cardmore1:hover {
+  background-color: var(--Cardbg1);
+}
+
+.Cardmore2:hover {
+  background-color: var(--Cardbg2);
+}
+
+.Cardmore3:hover {
+  background-color: var(--Cardbg3);
 }
 
 footer {
