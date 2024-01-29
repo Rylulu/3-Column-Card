@@ -33,7 +33,7 @@ Mobile
 
 ### Links
 
-- Live Site URL: [Github Pages](https://rylulu.github.io/Blog-Preview-Card/)
+- Live Site URL: [Github Pages](https://rylulu.github.io/3-Column-Card/)
 
 ## My process
 
