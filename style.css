@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --Cardbg1: hsl(31, 77%, 52%);
+  --Cardbg2: hsl(184, 100%, 22%);
+  --Cardbg3: hsl(179, 100%, 13%);
+  --Paragraph: hsla(0, 0%, 100%, 0.75);
+  --Headings: hsl(0, 0%, 95%);
+}
+
+html {
+  font-size: 15px;
+  background-color: white;
+}
+
+main {
+  min-height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  width: 850px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.Card {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem;
+}
+
+.Headings {
+  text-transform: uppercase;
+  color: var(--Headings);
+  font-size: 2.5rem;
+  font-family: "Big Shoulders Display";
+  padding: 2rem 0;
+  font-weight: 700;
+}
+
+.Description {
+  font-family: "Lexend Deca";
+  color: var(--Paragraph);
+  line-height: 1.8;
+  padding-bottom: 1rem;
+  margin-bottom: 3rem;
+}
+
+.Button {
+  margin-top: auto;
+  width: max-content;
+  font-family: "Lexend Deca";
+  background-color: var(--Headings);
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  border: none;
+}
+
+.Sedans {
+  background-color: var(--Cardbg1);
+}
+
+.Suvs {
+  background-color: var(--Cardbg2);
+}
+
+.Luxury {
+  background-color: var(--Cardbg3);
+}
+
+.Cardmore1 {
+  color: var(--Cardbg1);
+}
+
+.Cardmore2 {
+  color: var(--Cardbg2);
+}
+.Cardmore3 {
+  color: var(--Cardbg3);
+}
+
+footer {
+  text-align: center;
+}
+
+footer a {
+  color: var(--Cardbg3);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  html {
+    font-size: 1.2em;
+  }
+
+  .wrapper {
+    width: 90vw;
+    margin: 4rem 1rem;
+  }
+
+  .Description {
+    margin: 0;
+  }
+
+  .container {
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
